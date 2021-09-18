@@ -5,6 +5,8 @@ import ListItems from './ListItems'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
+//hi i made a change
+
 library.add(faTrash)
 
 class App extends React.Component {
@@ -47,9 +49,9 @@ class App extends React.Component {
   deleteItem(key){
     const filteredItems= this.state.items.filter(item =>
       item.key!==key);
-    // this.setState({
-    //   items: filteredItems
-    // })
+    this.setState({
+      items: filteredItems
+    })
 
   }
   setUpdate(text,key){
